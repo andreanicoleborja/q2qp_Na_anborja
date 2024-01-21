@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Shrikhand&family=Yeseva+One&display=swap');
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    background-color: #C5D0D8;
+}
+a{text-decoration: none;color:#ffffff ;}
+.links a
+   {
+    margin-left: 4vw;
+}
+nav{
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+nav a{
+    color: #ffffff;
+    font-family: 'Yeseva One', serif;
+    font-size: x-large;
+}
+.img{
+    background-color: white;
+    
+}
+.img img{
+    height: 50px;
+    width: 50px;
+}
+.pagetitle{
+    color: white;
+    font-family: 'Shrikhand', serif;
+    font-size: xx-large;
+}
+.banner{
+    margin-top: 2vw;
+    background-color: rgba(175, 180, 207, 0.192);
+    padding: 4vw;
+    text-align: center;
+}
+.banner p{
+    color: white;
+    text-align: center;
+}
+
+.bannerhead{
+    font-family: 'Shrikhand';
+    font-size: 36px;
+    
+}
+.bannerhead h1{
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 18%, rgba(93,128,73,1) 40%, rgba(233,223,211,1) 57%, rgba(79,116,150,1) 68%, rgba(0,0,0,1) 86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bannerhead h2{
+    color: #000000;
+}
+.bannerhead p{
+    text-align: center;
+    font-weight: bold;
+}
+.banner img{
+    height: 100px;
+    width: 100px;
+}
+.part12{
+    margin-top: 12vw;
+    background-color: #c5d0d8c2;
+    padding: 4vw;
+}
+.top h1{
+    text-align: left;
+    font-family: 'Shrikhand', serif;
+    color: #3268BB;
+    margin-bottom: 5px;
+}
+.top p{
+    color: #e2ecec;
+    font-family: 'Alice', serif;
+    font-size: medium;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    padding-top: 1%;
+}
+.bottom{
+    text-align: center;
+}
+.bottom h1{
+    text-align: left;
+    font-family: 'Shrikhand', serif;
+    color: #3268BB;
+    margin-bottom: 5px;
+    margin-top: 3%;
+}
+
+.bottom span{
+    font-weight: bold;
+    font-size: large;
+    color: rgb(54, 54, 54);
+}
+.pics{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+.pic1{
+    height: 50%;
+    width: 40%;
+}
+.pic2{
+    width: 40%;
+}
+.page2{
+    text-align: center;
+}
+.header2{
+    text-align: left;
+    font-family: 'Shrikhand', serif;
+    color: #3268BB;
+    font-size: 50px;
+    margin-top: 9px;
+    margin-bottom: 3px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.page2 img{
+    height: 35%;
+    width: 35%;
+    margin-bottom: 2%;
+}
+p{
+    color: #5a5a5a;
+    font-family: 'Alice', serif;
+    font-size: medium;
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: justify;
+    padding-bottom: 2%;
+}
+.page2 span{
+    font-size: x-large;
+    font-weight: bold;
+    color: #000000;
+}
+.page3{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.header3{
+    text-align: center;
+    font-family: 'Shrikhand', serif;
+    color: #3268BB;
+    font-size: 50px;
+}
+.info2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    
+}
+.bx1{
+    display: flex;
+    text-align: center;
+    font-family: 'Shrikhand', serif;
+    color: #000000;
+    font-size: 40px;
+    color: #3268BB;
+
+}
+.bx1 p{
+    display: flex;
+    text-align:justify;
+    padding-bottom: 2%;
+}
+
+footer{
+    display: flex;
+    background-color: #000000;
+    justify-content: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.icon{
+	background: url(sprite3.png) no-repeat;
+	width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+
+#twt{
+    background-position: -66px -72px;
+}
+
+#ig{
+    background-position: -290px -221px;
+}
+
+#fb{
+    background-position: -439px -146px;
+}
+
+#yt{
+    background-position: -439px -221px;
+}
+#bgvid{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: #4F517D;
+    }
+    .pagetitle{
+        color: #e2ecec ;
+        background-color: #A997DF;
+        padding: 1vw;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #DCCFEC;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        min-width: 100vw;
+        
+    }
+    .links a{
+        color: #000000;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+    }
+    .links a:hover{
+        background-color: #DDC4DD;
+        transition: .3s;
+    }
+    nav:hover .links{
+        display: block;
+    }
+    nav:hover .pagetitle{
+        background-color: #a89ba8;
+    }
+} 
