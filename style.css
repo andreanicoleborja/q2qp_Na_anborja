@@ -39,6 +39,13 @@ nav a{
     font-family: 'Shrikhand', serif;
     font-size: xx-large;
 }
+.links a:hover{
+    background-color: #424142;
+    transition: .3s;
+}
+nav:hover .links{
+    display: block;
+}
 .banner{
     margin-top: 2vw;
     background-color: rgba(175, 180, 207, 0.192);
@@ -60,16 +67,27 @@ nav a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.bannerhead h2{
+.bannerhead h3{
     color: #000000;
 }
 .bannerhead p{
     text-align: center;
     font-weight: bold;
 }
-.banner img{
-    height: 100px;
-    width: 100px;
+.bodies
+{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+}
+#logo{
+    background-image: url(media/logo.png);
+    height: 190px;
+    width: 170px;
+    animation: logomotion 60s linear infinite;
 }
 .part12{
     margin-top: 12vw;
@@ -163,26 +181,38 @@ p{
     font-size: 50px;
 }
 .info2{
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-flex;
+
     margin-top: 2%;
     
 }
-.bx1{
+.bxleft{
     display: flex;
+    flex-direction: column;
     text-align: center;
     font-family: 'Shrikhand', serif;
     color: #000000;
     font-size: 40px;
     color: #3268BB;
-
 }
-.bx1 p{
+.bxmid{
     display: flex;
-    text-align:justify;
-    padding-bottom: 2%;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Shrikhand', serif;
+    color: #000000;
+    font-size: 40px;
+    color: #3268BB;
 }
-
+.bxright{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Shrikhand', serif;
+    color: #000000;
+    font-size: 40px;
+    color: #3268BB;
+}
 footer{
     display: flex;
     background-color: #000000;
@@ -192,7 +222,7 @@ footer{
 }
 
 .icon{
-	background: url(sprite3.png) no-repeat;
+	background: url(media/sprite3.png) no-repeat;
 	width: 66px;
 	height: 66px;
     display: inline-block;
@@ -220,22 +250,25 @@ footer{
     position: fixed;
     z-index: -1;
 }
-
-@media screen and (max-width: 600px){
+@keyframes logomotion{
+    0% { transform: translate(0, 0); } /* Start from the upper-left corner */
+    100% { transform: translate(-250px, 120px); }
+}
+@media screen and (max-width: 800px){
     nav{
         position: relative;
-        background-color: #4F517D;
+        background-color: #6c8f58;
     }
     .pagetitle{
         color: #e2ecec ;
-        background-color: #A997DF;
+        background-color: #538657;
         padding: 1vw;
     }
     .links{
         display: none;
         z-index: 1;
         position: absolute;
-        background-color: #DCCFEC;
+        background-color: #728f6a;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         min-width: 100vw;
         
@@ -247,13 +280,28 @@ footer{
         display: block;
     }
     .links a:hover{
-        background-color: #DDC4DD;
+        background-color: #c3ecc0;
         transition: .3s;
     }
     nav:hover .links{
         display: block;
     }
     nav:hover .pagetitle{
-        background-color: #a89ba8;
+        background-color: #3d493c;
+    }
+    .info2{
+        flex-direction: column;
+    }
+
+    .bxleft{
+        width: 87vw;
+    }
+
+    .bxmid{
+        width: 87vw;
+    }
+
+    .bxright{
+        width: 87vw;
     }
 } 
